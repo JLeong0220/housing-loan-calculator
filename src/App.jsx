@@ -42,6 +42,7 @@ function App() {
           <label className="block mb-1 text-sm font-medium text-gray-700">
             Loan Amount (RM)
           </label>
+          const [amount, setAmount] = useState('500000'); // default RM 500,000
           <input
             type="number"
             className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -54,6 +55,8 @@ function App() {
           <label className="block mb-1 text-sm font-medium text-gray-700">
             Interest Rate (% per year)
           </label>
+          const [interest, setInterest] = useState('3.9'); // default 3.9%
+
           <input
             type="number"
             className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
